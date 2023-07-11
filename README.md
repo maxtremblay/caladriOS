@@ -1,4 +1,4 @@
-# Starting point
+# caladriOS
 
 [![build-ublue](https://github.com/maxtremblay/caladrios/actions/workflows/build.yml/badge.svg)](https://github.com/maxtremblay/caladrios/actions/workflows/build.yml)
 
