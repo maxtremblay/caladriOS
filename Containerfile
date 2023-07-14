@@ -43,9 +43,6 @@ COPY --from=docker.io/mikefarah/yq /usr/bin/yq /usr/bin/yq
 # Copy the build script and all custom scripts.
 COPY scripts /tmp/scripts
 
-# Replace the default fedora sway config with a custom one
-COPY configs/sway/config /etc/sway/config
-
 # Run the build script, then clean up temp files and finalize container build.
 RUN rpm-ostree install /tmp/ublue-os-wallpapers-0.1-1.fc38.noarch.rpm && \
         chmod +x /tmp/scripts/build.sh && \
