@@ -234,6 +234,11 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
+set $laptop eDP-1
+bindswitch --reload --locked lid:on output $laptop disable
+bindswitch --reload --locked lid:off output $laptop enable
+exec_always /usr/etc/sway/clamshell.sh 
+
 # Include configs from 3 locations:
 #  - /usr/share/sway/config.d
 #  - /etc/sway/config.d
